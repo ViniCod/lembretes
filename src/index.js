@@ -1,6 +1,8 @@
 const express = require ('express');
 const app = express();
+const lembretes = {};
 app.get ('/lembretes', (req, res) => {
+    res.send(lembretes);
 });
 app.put ('/lembretes', (req, res) => {
 
